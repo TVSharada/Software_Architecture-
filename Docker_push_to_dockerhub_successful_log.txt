@@ -1,0 +1,26 @@
+PS C:\Users\shara\Desktop\SAD\BackendRating\backendrating> docker ps
+CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS              PORTS                    NAMES62eca81c00a7        backendrating_backend   "docker-entrypoint.s…"   17 minutes ago      Up 15 minutes       0.0.0.0:5000->5000/tcp   backendrating_backend_1
+PS C:\Users\shara\Desktop\SAD\BackendRating\backendrating> docker tag NAMES62eca81c00a7 sharadatv/docker_withnodejs
+Error parsing reference: "NAMES62eca81c00a7" is not a valid repository/tag: invalid reference format: repository name must be lowercase    
+PS C:\Users\shara\Desktop\SAD\BackendRating\backendrating> docker tag 62eca81c00a7 sharadatv/docker_withnodejs
+Error response from daemon: No such image: 62eca81c00a7:latest
+PS C:\Users\shara\Desktop\SAD\BackendRating\backendrating> docker tag backendrating_backend sharadatv/docker_withnodejs
+PS C:\Users\shara\Desktop\SAD\BackendRating\backendrating> docker push sharadatv/docker_withnodejs
+The push refers to repository [docker.io/sharadatv/docker_withnodejs]
+ed4785ccd0cf: Preparing
+58c10bc306ce: Preparing
+58c10bc306ce: Pushing [==================================================>]   53.4MB
+58c10bc306ce: Pushed
+423451ed44f2: Mounted from library/node
+b2aaf85d6633: Mounted from library/node
+88601a85ce11: Mounted from library/node
+42f9c2f9c08e: Mounted from library/node
+99e8bd3efaaf: Mounted from library/node
+bee1e39d7c3a: Mounted from library/node
+1f59a4b2e206: Mounted from library/node
+0ca7f54856c0: Mounted from library/node
+ebb9ae013834: Mounted from library/node
+
+
+latest: digest: sha256:885da02d4f2a51c3d03ac2988071b050676d73a55894c2f63009db7504ec9b60 size: 3055
+PS C:\Users\shara\Desktop\SAD\BackendRating\backendrating> 
