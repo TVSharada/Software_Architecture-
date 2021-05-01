@@ -1,6 +1,6 @@
 # Software_Architecture_Development
 Title: Mobile Rating Application  
-Programming languages: React, Express.JS  
+Programming languages: React, Express.JS, HTML, CSS  
 Database : MongoDB  
 Software Tools & API : Docker, Jenkins, Visual Studio Code, Insomnia, REST API  
 Description :   
